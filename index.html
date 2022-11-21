@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <title>Document</title>
+    <style>
+        img{width: 100px;}
+        *{
+        box-sizing: border-box;
+    }
+        a{
+            color: #fafafa;
+            text-decoration: none;
+        }
+        body{
+            margin:0%;
+            padding:0%;
+            background-image: url('html/teslaB.jpg');
+            background-size: 316%;
+    background-position: top;
+        }
+nav{
+background:rgb(100,0,1);
+padding:20px 5%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+/*first nav div nissan logo*/
+nav img{
+    width: 70px;
+    border-radius: 4px;
+}
+/*second nav div logo*/
+.dadnav{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+width:70px;
+height:70px;
+margin:auto 0;
+line-height:1.6;
+gap:2px;
+justify-content:center;
+align-content:center;
+}
+.dadinner{
+margin:1px;
+background:rgb(160,0,47);
+border-radius:2px;
+box-shadow:-1px -1px 5px #000010;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+/*third nav div ooen side bar*/
+nav .open{
+align-items:center;
+justify-content:center;
+display:flex;
+flex-direction:column;
+width: 70px;
+height: 70px;
+}
+nav span{
+    width: 39px;
+    height: 5px;
+    margin: 1.5px;
+    border-radius: 3px;
+    background-color: #a0002f;
+    border: solid #a14f67 .1px;
+}
+
+/********************/
+/*side bar */
+nav span{
+    width: 39px;
+    height: 6px;
+    margin: 1.5px;
+    border-radius: 3px;
+    background-color: #f3dede;
+}
+/*side bar*/
+.sidebar{
+background-color:#ffe4c4;
+display:none;
+opacity:90%;
+width: 45%;
+min-height: 50vh;
+z-index: 999;
+border-bottom-left-radius: 4px;
+}
+.sidebar div{
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    height: 245px;
+    line-height: 245px;
+    z-index: 999;
+    border-bottom: solid 0.5px;
+    font-size: 40px;
+}
+.sidebar div:last-child{
+    border:none
+}
+.sidebar div:hover{
+    font-weight: bold;
+    font-style:italic;
+    transition: all .5s;
+}
+.bigdiv{
+    display: grid;
+    width: 100%;
+    padding: 10px 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4.5px;
+    margin-top: 108px;
+}
+.bigdiv a{
+    background-color: #a0002fd6;
+    display: grid;
+    grid-template-rows: 1fr.5px auto;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+.bigdiv a img,
+.bigdiv a i{
+    width: 60%;
+    font-size: 30px;
+    margin: 0 auto;
+    
+}
+a hr{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -22px;
+}
+.bigdiv a h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 21px;
+    position: relative;
+    bottom: 9px;
+}
+/*main box 2*/
+
+.rent-car{
+    margin:0;
+    padding:0;
+}
+.msg{
+    position: fixed;
+    bottom: 10px;
+    z-index: 10000;
+    right: 10px;
+    width: 120px;
+    height:120px;
+    overflow: hidden;
+    border:solid 3px #000;
+    border-radius: 50%;
+}
+
+/*js work*/
+.open{
+    display: block;
+}
+/*
+<i class="fa-solid fa-car"></i>
+
+--car icons
+
+<i class="fa-duotone fa-car"></i>
+--loction
+
+
+
+<i class="fa-sharp fa-solid fa-car-building"></i>
+<i class="fa-solid fa-car-building"></i>
+<i class="fa-sharp fa-solid fa-house-chimney-user"></i>
+--Home
+
+<i class="fa-regular fa-screwdriver-wrench"></i>
+--spare parts
+
+<i class="fa-regular fa-messages"></i>
+--chats
+*/
+    </style>
+</head>
+<body>
+    <!--<i class="fa-duotone fa-car"></i>
+    <i class="fa-sharp fa-solid fa-car-building"></i>
+<i class="fa-solid fa-car-building"></i>
+<i class="fa-sharp fa-solid fa-house-chimney-user"></i>-->
+    <!--nav div-->
+    <nav>
+        <!--First div nissan logo-->
+        <a href="html/nissanparts.html"><img src="image/nissan-logo-2020-white.png"></a>
+        <!--second div logo-->
+        <div class="dadnav">
+        
+        <div style="border-bottom-right-radius:8.333px;background-image:url('image/nissan-logo-2020-white.png');background-size:100%;background-position: center;
+        background-repeat: no-repeat;;
+        opacity:80%;" class="dadinner">
+        </div>
+        <div class="dadinner"><a href="/html/index.html"></a></div>
+        <div class="dadinner"></div>
+        <div class="dadinner"></div>
+        <div class="dadinner"></div>
+        <div class="dadinner"></div>
+        <div class="dadinner"></div>
+        <div class="dadinner"></div>
+        <div class="dadinner"></div>
+        
+        </div>
+        <!--third open sidebar-->
+        <div class="open">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        </nav>
+
+        <!--side bar-->
+<div style="position:absolute;right:0;min-height:40vh;border:solid .5px;" class="sidebar">
+    <div>Y60</div>
+    <div>Y61</div>
+    <div>Y62</div>
+    </div>
+
+
+    <!--in the main box-->
+
+    <!--in the main box 2-->
+<div class="bigdiv">
+<a class="home1" href="html/nissanparts.html">
+    <img style="padding-bottom: 0%;" src="image/spearparticon-removebg-preview.png" alt="">
+    <hr>
+    <h3>Spear Parts</h3>
+</a>
+<a class="home1" href=""></a>
+<a class="home1" href=""></a>
+<a class="home1" href="">
+    <i style="margin-top: 24px;font-size:60px ;position: relative;top: 23px;" class="fa fa-car"></i>
+    <hr>
+    <h3>CARS</h3>
+</a>
+<!--5 and center-->
+<a class="home1" href="">
+    <img  style="padding:0%;position: relative;bottom: 5px;"src="image/homeicon-removebg-preview.png" alt="" srcset="">
+    <hr>
+    <h3>Home</h3>
+</a>
+<a class="home1" href="">
+
+</a>
+<a class="home1" href="">
+    <i class="fa-duotone fa-car"></i>
+    <hr>
+    <h3>Soon</h3>
+</a>
+
+<a class="home1" href="">
+<i class="fa-brands fa-instagram"></i>
+    <hr>
+    <h3>Media</h3>
+</a>
+
+<a class="rent-car home1" href="">
+    <img style="border:none;width: 40%;" src="image/keyicon-removebg-preview.png" alt="" srcset="">
+    <hr>
+    <h3>Rent car</h3>
+</a>
+</div>
+    <!--js-->
+<script>
+    document.querySelector(".open").onclick = function(){
+    document.querySelector(".sidebar").classList.toggle("sidebar-js")
+    }
+
+    /*document.querySelector(".bigdivv").onclick = function(){
+        this.style.cssText = 'transition: all .5s';
+    }*/
+    /*document.querySelector(".home").onclick = function(){
+        this.style.cssText = 'border-bottom-right-radius:33.5px';
+    }*/
+    /*document.querySelector(".home").onclick = function(){
+        this.style.cssText = 'border-bottom-right-radius:33.5px';
+    }*/
+    bigg = document.querySelectorAll(".bigdiv a");
+    bigg.forEach(a=>{
+        a.addEventListener('click', ()=>{
+            a.style.cssText = 'border-bottom-right-radius:33.5px';
+        })
+        
+    })
+    </script>
+    <a href="http://"><img class="msg" src="image/chaticon-removebg-preview.png" alt="" srcset=""></a>
+</body>
+</html>
